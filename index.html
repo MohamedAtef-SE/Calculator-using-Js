@@ -1,0 +1,54 @@
+<!-- ! Mohamed Atef - Calculator Task :) C42 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!--& Font Awesome Style Sheet -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--& Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <!--& Main Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="calculator">
+        <div class="screen">
+            <p id="screen"></p>
+        </div>
+        <div class="btns">
+            <div class="btn-num">
+                <button onclick="Numberclicked('7')" id="seven">7</button>
+                <button onclick="Numberclicked('8')" id="eight">8</button>
+                <button onclick="Numberclicked('9')" id="nine">9</button>
+                <button onclick="Numberclicked('4')" id="four">4</button>
+                <button onclick="Numberclicked('5')" id="five">5</button>
+                <button onclick="Numberclicked('6')" id="six">6</button>
+                <button onclick="Numberclicked('1')" id="one">1</button>
+                <button onclick="Numberclicked('2')" id="two">2</button>
+                <button onclick="Numberclicked('3')" id="three">3</button>
+                <button onclick="btnReset()" id="reset">c</button>
+                <button onclick="Numberclicked('0')" id="zero">0</button>
+                <button onclick="Numberclicked('.')" id="dot">.</button>
+            </div>
+            <div class="btn-op">
+                <button onclick="usingOperator('*')" id="multi">x</button>
+                <button onclick="usingOperator('/')" id="divide">/</button>
+                <button onclick="usingOperator('+')" id="plus">+</button>
+                <button onclick="usingOperator('-')" id="minus">-</button>
+            </div>
+            <div class="equal">
+                <button onclick="opEqual()" id="equal">=</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--! JavaScript -->
+    <script src="./Js/main.js"></script>
+</body>
+
+</html>

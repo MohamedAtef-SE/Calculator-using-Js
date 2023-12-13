@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    /* height: 75px; */
+    padding: 18px 0px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #777;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+
+.calculator {
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    height: calc(100vh - 40px);
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.calculator .screen {
+    overflow: hidden;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100px;
+    margin: 0px auto 20px;
+    border: 3px solid;
+    border-top: 5px solid;
+    border-bottom: 2px solid;
+    padding: 10px;
+    font-size: 48px;
+    font-family: 'Quantico', sans-serif;
+}
+
+@media (max-width: 992px) {
+    .calculator .screen {
+        font-size: 40px;
+    }
+
+}
+
+.calculator .btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.calculator .btns .btn-num {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(75% - 15px);
+}
+
+.calculator .btns .btn-op {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(25% - 15px);
+}
+
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .calculator .screen {
+        font-size: 33px;
+    }
+
+    .calculator .btns .btn-num {
+        width: calc(75% - 15px);
+
+    }
+
+    .calculator .btns .btn-op {
+        width: calc(25% - 15px);
+    }
+
+    button {
+        /* height: 60px; */
+        padding: 10px 0px;
+    }
+
+}
+
+.calculator .btns .btn-num button {
+    width: calc(100% / 3 - 4px);
+    background-color: goldenrod;
+}
+
+.calculator .btns .btn-op button {
+    width: calc(100% - 4px);
+    background-color: cornflowerblue;
+}
+
+.calculator .btns .equal {
+    width: 100%;
+}
+
+.calculator .btns .equal button {
+    width: calc(100% - 20px);
+    background-color: tomato;
+    margin: 0px 10px;
+}
+
+#reset {
+    background-color: green;
+}
+
+#reset:active {
+    background-color: greenyellow;
+}
+
+.calculator .btns .btn-op button:active {
+    background-color: darkblue;
+}
+
+.calculator .btns .btn-num button:active {
+    background-color: gold;
+}
+
+.calculator .btns .equal button:active {
+    background-color: red;
+}
