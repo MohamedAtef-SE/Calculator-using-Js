@@ -91,7 +91,6 @@ function opEqual() {
     }
     //^ Display the Total Of Operation
     document.getElementById('screen').innerHTML = Number(sum);
-    sum = 0;
     /*
      saved length of array in variable before starting pop() to ensure the loop will itirate 
      on all of elements because every itiration length of arr will decrement -1 and use this variable
