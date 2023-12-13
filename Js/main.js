@@ -53,6 +53,7 @@ function btnReset() {
         arrOfOp.pop();
     }
     arrOfOp = ['+'];
+    sum = 0;
     document.getElementById('screen').innerHTML = 0;
 }
 
