@@ -1,4 +1,4 @@
-//! Mohamed Atef - Calculator Task :) C42 
+//! Mohamed Atef - Calculator Task :) 
 
 //^ creating varable to keep number and display it on screen until we push the value into the arr of numbers
 var totalOfNum;

@@ -29,6 +29,7 @@ button {
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
+
 .calculator .screen {
     overflow: hidden;
     background-color: aliceblue;
@@ -71,10 +72,10 @@ button {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .calculator {
         width: 90%;
-        height: 80vh;
+        height: 65vh;
     }
 
     .calculator .screen {
@@ -95,6 +96,19 @@ button {
         padding: 10px 0px;
     }
 
+    .equal {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .equal .sign {
+        width: 100px;
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
 }
 
 .calculator .btns .btn-num button {
@@ -109,12 +123,16 @@ button {
 
 .calculator .btns .equal {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
 }
 
 .calculator .btns .equal button {
-    width: calc(100% - 20px);
+    width: calc(100% - 0px);
     background-color: tomato;
-    margin: 0px 10px;
+    margin: 0;
 }
 
 #reset {
@@ -135,4 +153,25 @@ button {
 
 .calculator .btns .equal button:active {
     background-color: red;
+}
+
+
+.sign {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.438);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sign span {
+    font-size: 18px;
+
 }
